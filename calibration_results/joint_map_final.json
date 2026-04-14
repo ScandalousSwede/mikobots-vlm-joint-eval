@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-03-16 16:58:46",
+  "model": "gpt-4o",
+  "known_anchors": {
+    "1": 2,
+    "3": 1,
+    "6": 6
+  },
+  "per_joint_results": {
+    "J1": {
+      "firmware_joint": 1,
+      "physical_joint_observed": 2,
+      "confidence": 0.9,
+      "motion_description": "The base of the robot rotates, moving the entire arm assembly.",
+      "sim_match": true,
+      "reasoning": "The simulator shows the base rotating when firmware joint 1 moves, and the real camera strip confirms this motion, indicating physical joint 2 is moving."
+    },
+    "J2": {
+      "firmware_joint": 2,
+      "physical_joint_observed": 3,
+      "confidence": 0.9,
+      "motion_description": "The large circular base rotates, moving the entire upper arm structure.",
+      "sim_match": true,
+      "reasoning": "The simulator shows the base rotating when firmware joint 2 moves, which matches the observed motion in the real camera strip."
+    },
+    "J3": {
+      "firmware_joint": 3,
+      "physical_joint_observed": 1,
+      "confidence": 0.95,
+      "motion_description": "The upper arm of the robot moves, rotating around the shoulder joint.",
+      "sim_match": true,
+      "reasoning": "The simulator shows the upper arm moving, which matches the motion observed in the real camera strip, confirming that physical joint 1 is moving."
+    },
+    "J4": {
+      "firmware_joint": 4,
+      "physical_joint_observed": 4,
+      "confidence": 0.9,
+      "motion_description": "The upper arm of the robot moves, rotating around the joint connecting it to the base.",
+      "sim_match": true,
+      "reasoning": "The motion observed in the real camera strip matches the simulator rendering, where the upper arm rotates around the joint connecting it to the base, indicating that firmware joint 4 corresponds to physical joint 4."
+    },
+    "J5": {
+      "firmware_joint": 5,
+      "physical_joint_observed": 5,
+      "confidence": 0.9,
+      "motion_description": "The wrist joint rotates, moving the end effector.",
+      "sim_match": true,
+      "reasoning": "The motion in the real camera strip shows the wrist joint rotating, which matches the simulator rendering where the green-highlighted link is the wrist joint."
+    },
+    "J6": {
+      "firmware_joint": 6,
+      "physical_joint_observed": 6,
+      "confidence": 0.95,
+      "motion_description": "The end effector rotates around its axis.",
+      "sim_match": true,
+      "reasoning": "The motion in the real camera strip shows the end effector rotating, which matches the simulator rendering where the green-highlighted link (end effector) is driven by firmware joint 6."
+    }
+  },
+  "final_firmware_to_physical_map": {
+    "1": 2,
+    "2": 3,
+    "3": 1,
+    "4": 4,
+    "5": 5,
+    "6": 6
+  },
+  "anchor_validation_passed": true
+}
